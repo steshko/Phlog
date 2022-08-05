@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="nine_text">9sp</dimen>
+    <dimen name="one_nine">190dp</dimen>
+    <dimen name="margin">5dp</dimen>
+    <dimen name="margin_big">15sp</dimen>
+    <dimen name="margin_left">20sp</dimen>
+
+    <integer name="time_between_location_updates_ms">2000</integer>
+    <integer name="threshold_for_last_location_ms">10000</integer>
+    <integer name="ten">10</integer>
+    <integer name="one">1</integer>
+
+
+</resources>

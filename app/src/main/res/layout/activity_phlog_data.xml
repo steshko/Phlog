@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhlogData"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title"
+        android:id="@+id/etTitle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text"
+        android:id="@+id/etText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTakePhoto"
+            android:text="@string/take_new_photo"
+            android:onClick="onClickListener"
+            android:layout_margin="@dimen/margin"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGalleryPhoto"
+            android:text="@string/add_gallery_photo"
+            android:onClick="onClickListener"
+            android:layout_margin="@dimen/margin"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/zero_dp"
+            android:layout_weight="@integer/one"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPrevious"
+            android:onClick="onClickListener"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/one_nine"
+            android:layout_height="@dimen/one_nine"
+            android:id="@+id/ivPreview"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@integer/one"
+            android:id="@+id/btnNext"
+            android:onClick="onClickListener"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="@dimen/one_nine"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPreview"
+        android:textSize="@dimen/nine_text"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDeleteImage"
+        android:text="@string/delete_image"
+        android:visibility="gone"
+        android:onClick="onClickListener"
+        android:backgroundTint="@android:color/holo_red_light"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnVoiceRecording"
+        android:text="@string/start_recording"
+        android:onClick="onClickListener"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSave"
+            android:text="save"
+            android:onClick="onClickListener"
+            android:layout_margin="5sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDeletePhlog"
+            android:text="Delete Phlog"
+            android:onClick="onClickListener"
+            android:layout_margin="5sp"
+            android:visibility="gone"
+            android:backgroundTint="@android:color/holo_red_light"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

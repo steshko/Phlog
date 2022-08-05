@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Phlogging</string>
+    <string name="add_phlog">Add Phlog</string>
+    <string name="audio_file_name">MyVoice.mp4</string>
+    <string name="update">Update</string>
+    <string name="title">Title</string>
+    <string name="text">Text</string>
+    <string name="take_new_photo">Take New Photo</string>
+    <string name="add_gallery_photo">Add Gallery Photo</string>
+    <string name="delete_image">Delete Image</string>
+    <string name="start_recording">Start Recording</string>
+</resources>
